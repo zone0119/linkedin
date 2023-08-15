@@ -27,6 +27,8 @@ let  pfName = 'profileName_c'+count;
 
 count++;
 console.log("count=" + count);
+			 window.scrollBy(0, 1550);
+
 			 setTimeout(f, rand * 3000);			 			 
 			 }
 
