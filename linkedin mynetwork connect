@@ -1,0 +1,33 @@
+// Open GOOGLE CHROME press F12 -> put CODE to console, open site https://www.linkedin.com/mynetwork/ 
+
+//  automation tool that helps you automatically connect profile linkedin ,
+
+
+
+			let count = 0;
+			let newWin = [];
+			function f() {	
+				let rand = 10;
+
+
+//https://www.linkedin.com/mynetwork/
+
+profilesLength = document.querySelectorAll(".discover-entity-type-card__bottom-container button").length;
+profiles = document.querySelectorAll(".discover-entity-type-card__bottom-container button");
+
+
+
+profile = profiles[count];
+
+profile.click();
+
+
+                    
+
+
+count++;
+console.log("count=" + count);
+			 setTimeout(f, rand * 3000);			 			 
+			 }
+
+			f()
