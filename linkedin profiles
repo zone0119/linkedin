@@ -1,0 +1,33 @@
+// Open GOOGLE CHROME press F12 -> put CODE to console, open site https://www.linkedin.com/mynetwork/
+
+//  automation tool that helps you automatically view profiles,
+
+			let count = 0;
+			let newWin = [];
+			function f() {	
+				let rand = 10;
+
+
+//https://www.linkedin.com/mynetwork/
+
+profilesLength = document.querySelectorAll(".ember-view .discover-entity-type-card__link").length;
+profiles = document.querySelectorAll(".ember-view .discover-entity-type-card__link");
+
+
+
+profile = profiles[count];
+
+let  pfName = 'profileName_c'+count;
+ newWin[count] = window.open(profile.getAttribute('href'), pfName, 'width=400, height=400');
+        console.log("pfName="+profile.getAttribute('href') + pfName);
+ 
+
+                    
+
+
+count++;
+console.log("count=" + count);
+			 setTimeout(f, rand * 3000);			 			 
+			 }
+
+			f()
