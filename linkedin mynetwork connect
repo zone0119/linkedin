@@ -27,6 +27,9 @@ profile.click();
 
 count++;
 console.log("count=" + count);
+
+			 window.scrollBy(0, 550);
+
 			 setTimeout(f, rand * 3000);			 			 
 			 }
 
