@@ -30,7 +30,7 @@ console.log("count=" + count);
 
 			 window.scrollBy(0, 1550);
 
-			 setTimeout(f, rand * 3000);			 			 
+			 setTimeout(f, rand * 1000);			 			 
 			 }
 
 			f()
